@@ -28,10 +28,7 @@ class calcgui(QMainWindow):
             self.display.setFixedHeight(50)
             self.display.setAlignment(Qt.AlignLeft)
             self.display.setReadOnly(True)
-            self.store = QLineEdit()
-            self.store.setFixedHeight(50)
             self.generalLayout.addWidget(self.display)
-            self.generalLayout.addWidget(self.store)
     def _createButtons(self):
         self.buttons = {}
         buttonsLayout = QGridLayout()
