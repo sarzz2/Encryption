@@ -30,7 +30,7 @@ def valid(bo, num, pos):
             return False
     # Check column
     for i in range(len(bo)):
-        if bo[i][pos[1]] and pos[0] == i:
+        if bo[i][pos[1]] == num and pos[0] != i:
             return False
     #Check box
     box_x = pos[1] // 3
