@@ -1,3 +1,4 @@
+# Creates the 9x9 Sudoku board
 board = [
         [7, 8, 0, 4, 0, 0, 1, 2, 0],
         [6, 0, 0, 0, 7, 5, 0, 0, 9],
@@ -16,7 +17,7 @@ def solve(bo):
     else:
         row, col = find               # row, col = i,j fromm find_empty function
     for i in range(1,10):
-        if valid(bo, i, (row,col)):   # Calling the vlaid function to check if the value entered is valid
+        if valid(bo, i, (row,col)):   # Calling the valid function to check if the value entered is valid
             bo[row][col] = i
             if solve(bo):             #recursive function call
                 return True
